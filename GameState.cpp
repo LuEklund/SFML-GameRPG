@@ -80,7 +80,7 @@ void GameState::initPlayers()
 
 void GameState::initTileMap()
 {
-	tileMap = new TileMap(stateData->gridSize, 1000, 1000, "Textures/tileSheet.png");
+	tileMap = new TileMap(stateData->gridSize, 10, 10, "Textures/tileSheet.png");
 	tileMap->loadFromFile("text.txt");
 }
 

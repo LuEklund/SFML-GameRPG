@@ -9,7 +9,6 @@ gui::Button::Button(float x, float y, float width, float height,
 {
 
 	this->id = id;
-
 	//setting up the button (shape) and the text of button
 	this->font = font;
 	this->shape.setPosition(sf::Vector2f(x, y));

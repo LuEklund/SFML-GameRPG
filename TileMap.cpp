@@ -32,8 +32,6 @@ TileMap::TileMap(float gridSize, int width, int height, std::string texture_file
 	layers = 1;
 	textureFile = texture_file;
 
-	std::cout << "width: " << width << std::endl;
-	std::cout << "height: " << height << std::endl;
 	//Culling
 	this->fromX = 0;
 	this->toX = 0;

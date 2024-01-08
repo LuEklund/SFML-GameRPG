@@ -5,6 +5,7 @@ void Entity::initVariales()
 	hitboxComponent = NULL;
 	movementComponent = NULL;
 	animationComponent = NULL;
+	attributeComponent = NULL;
 }
 
 Entity::Entity()
@@ -17,6 +18,7 @@ Entity::~Entity()
 	delete hitboxComponent;
 	delete movementComponent;
 	delete animationComponent;
+	delete attributeComponent;
 }
 
 //Component functions
@@ -43,6 +45,12 @@ void Entity::createAnimationComponent(sf::Texture &tetxureSheet)
 {
 	if (animationComponent == NULL)
 		animationComponent = new AnimationComponent(sprite, tetxureSheet);
+}
+
+void Entity::createAttributeComponent()
+{
+	if (attributeComponent == NULL)
+		attributeComponent = new AttributeComponent(0);
 }
 
 const sf::Vector2f &Entity::getPosition() const
