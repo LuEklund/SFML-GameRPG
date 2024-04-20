@@ -1,6 +1,7 @@
 # Open World RPG Game Development (Under Construction)
 
 This is an open-world RPG game currently being developed using C++ and SFML. More details will be added as the project progresses.
+
 ![](https://github.com/LuEklund/SFML-GameRPG/blob/master/SFML-RPG.gif)
 ## Table of Contents
 - [x] [Setup and Initial Game Design](#setup-and-initial-game-design)
